@@ -1,7 +1,27 @@
 import React from 'react';
+import { QuestionCard } from './components';
 
 const App = () => {
-  return <div>App</div>;
+  const startTrivia = async () => {};
+
+  const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {};
+
+  const nextQuestion = () => {};
+
+  return (
+    <div className="app">
+      <h1>Welcome to Quiz</h1>
+      <button className="start" onClick={startTrivia}>
+        Start
+      </button>
+      <p className="score">Score:</p>
+      <p>Loading Questions ...</p>
+      <QuestionCard />
+      <button className="next" onClick={nextQuestion}>
+        Next Question
+      </button>
+    </div>
+  );
 };
 
 export default App;
